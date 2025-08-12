@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Shaik's Portfolio</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 12px 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+
+        .navbar a:hover {
+            background-color: #34495e;
+            border-radius: 4px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            margin: 5px 0;
+            color: #34495e;
+        }
+
+        .project p {
+            margin: 5px 0;
+        }
+
+        .project a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            padding: 30px;
+            border-top: 4px solid #3498db;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto 60px auto;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .contact-section p {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .contact-section button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-section button:hover {
+            background-color: #27ae60;
+        }
+
+        .success-message {
+            color: green;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🌐 Navbar -->
+    <div class="navbar">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <div class="container">
+        <!-- 👋 Intro -->
+        <div class="section">
+            <h1>👋 Hi, I'm Shaik</h1>
+            <p>
+                I'm a computer science student and full-stack developer focused on building scalable, real-world web
+                applications. I specialize in backend integrations, clean UI/UX, and design prototyping.
+            </p>
+        </div>
+
+        <!-- 🧳 Skills -->
+        <div class="section" id="skills">
+            <h2>🧳 Skills</h2>
+            <ul>
+                <li>Python, Flask, React</li>
+                <li>Stripe & Razorpay payment gateway integration</li>
+                <li>Authentication, context management, and debugging</li>
+                <li>UI/UX design with theme consistency</li>
+            </ul>
+        </div>
+
+        <!-- 💼 Projects -->
+        <div class="section" id="projects">
+            <h2>💼 Projects</h2>
+            <div class="project">
+                <h3>1. Sales Data Analysis (Python, Pandas)</h3>
+                <p>Analyzed fictional sales data using Pandas and Matplotlib. Extracted insights and visualized trends
+                    with bar, pie, and line charts.</p>
+                <a href="#">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>2. Full-Stack Payment App (Flask + Stripe)</h3>
+                <p>Built a secure payment flow using Flask and Stripe. Includes authentication, error handling, and
+                    real-time transaction feedback.</p>
+                <a href="#">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>3. Portfolio Website (Flask)</h3>
+                <p>This very site! A personal portfolio built with Flask, showcasing skills, projects, and contact form.
+                </p>
+                <a href="#">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- 📜 Certifications -->
+        <div class="section" id="certifications">
+            <h2>📜 Certifications</h2>
+            <ul>
+                <li><strong>Python for Data Science – IBM</strong><br />Completed foundational Python and data analysis
+                    modules with hands-on labs.</li>
+                <li><strong>Full-Stack Web Development – Udemy</strong><br />Covered HTML, CSS, JavaScript, Flask, and
+                    deployment strategies.</li>
+            </ul>
+        </div>
+
+        <!-- 🎯 Goals -->
+        <div class="section" id="goals">
+            <h2>🎯 Goals</h2>
+            <ul>
+                <li>Secure a top tech internship (e.g., Microsoft)</li>
+                <li>Master DSA and backend scalability</li>
+                <li>Build a professional portfolio with live demos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 📬 Contact Form -->
+    <div class="contact-section" id="contact">
+        <h2>📬 Contact Me</h2>
+        <p>If you'd like to collaborate, hire, or just say hello, feel free to reach out.</p>
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        {% if success %}
+        <script>
+            alert("✅ Message sent successfully!");
+        </script>
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
